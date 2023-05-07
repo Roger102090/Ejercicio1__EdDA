@@ -7,7 +7,7 @@ int main()
     int n1, n2;
     printf("Debes ingresar dos números para averiguar cual es mayor\nIngresa el primer numero:\n");
     scanf("%d", &n1);
-    printf("Ingresa el segundo numero:\n");
+    printf("Ingresa el segundo número:\n");
     scanf("%d", &n2);
     if (n1 > n2)
     {
