@@ -1,36 +1,15 @@
 #include <iostream>
 using namespace std;
 int main() {
-    int n1, n2, n3, op;
+   int n1, n2, n3, opS, opR, opM, opD;
     
-        printf("Ingresa dos números y elige la opción deseada entre las siguientes:\n1: Suma\n2: Resta\n3: Multiplicación\n4: División\nIngrese el primer número:\n");
+    printf("Ingresa dos números se va a realizar una\nSuma\nResta\nMultiplicación\nDivisión\nIngrese el primer número:\n");
         cin >> n1;
         printf("Ingrese el segundo número:\n");
         scanf("%d", &n2);
-        printf("Ingrese la opción deseada:\n");
-        scanf("%d", &op);
-
-        switch (op)
-        {
-            case 1:
-                op = n1 + n2;
-                
-                break;
-            case 2:
-                op = n1 - n2;
-             
-                break;
-            case 3:
-                op = n1 * n2;
-                
-                break;
-            case 4:
-                op = n1 / n2;
-                
-                break;
-            default:
-                printf("Debes elegir opción adecuada");
-                break;
-        }
-        printf("La respuesta de la operacion es: %d", op);        
+            opS = n1 + n2;
+            opR = n1 - n2;
+            opM = n1 * n2;
+            opD = n1 / n2;
+    printf("La respuesta de la operacion suma es: %d\nDe la resta: %d\nDe la multiplicación: %d\nDe la división: %d", opS, opR, opM, opD);        
 }
