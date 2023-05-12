@@ -4,15 +4,15 @@
 using namespace std;
 int main()
 {
-    int n1, n2;
+    float n1, n2;
     printf("Debes ingresar dos números para averiguar cual es mayor\nIngresa el primer numero:\n");
-    scanf("%d", &n1);
+    scanf("%f", &n1);
     printf("Ingresa el segundo número:\n");
-    scanf("%d", &n2);
+    scanf("%f", &n2);
     if (n1 > n2)
     {
-        printf("El primer número: %d es mayor que el segundo número: %d\n", n1, n2);
+        printf("El primer número: %f es mayor que el segundo número: %f\n", n1, n2);
     }else {
-        printf("El segundo número: %d es mayor que el segundo número: %d\n", n2, n1);
+        printf("El segundo número: %f es mayor que el segundo número: %f\n", n2, n1);
     }
 }
