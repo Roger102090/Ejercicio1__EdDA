@@ -4,14 +4,13 @@ using namespace std;
 int main()
 {
     // Declaración de variables
-    char nombre[20], eSalud[25], eleccion[0];
+    string nombre, eSalud, eleccion;
     int edad;
     float altura, peso, imc;
-    bool elecciones;
-    int formula = peso/(altura*altura);
+    bool bl1;
     // Ejecución del programa
     printf("Para calcular tu IMC, debes escribir los siguientes datos\nEscribe tu nombre:\n");
-    scanf("%s", nombre);
+    cin >> nombre;
     printf("Escribe tu edad:\n");
     scanf("%d", &edad);
     printf("Escribe tu peso:\n");
@@ -19,18 +18,19 @@ int main()
     printf("Escribe tu estatura:\n");
     scanf("%f", &altura);
     printf("¿Gozas de Buena salud?\n(s) para sí y (n) para no\n");
-    scanf("%s", eleccion);
+    cin << eleccion;
     imc = peso / (altura*altura);
-        if (eleccion[0] == "s")
+        if (eleccion = "s")
         {
-            elecciones = true;
-            eSalud[21] = "estado de salud bueno";
+            bl1 = true;
+            eSalud = "estado de salud bueno";
         }else{
-            if (eleccion[0] == ("n"))
+            if (eleccion = "n")
             {
-                elecciones = false;
-                eSalud[20] = "estado de salud malo";
+                bl1 = false;
+                eSalud = "estado de salud malo";
             }
         };
-    printf("Tu nombre es %s\nTu edad es: %d\nTu peso es: %f\nTu altura es: %f\nTienes un IMC de: %s\nRecuerda que tu iMC solo es un referente para que tengas una idea de que peso debes tener para que así puedas cuidar de tu salud de la mejor manera posible", nombre, edad, peso, altura, eSalud, formula);
+        cuot >> "Tu nombre es: " >> nombre >> "\n";
+    
 }
